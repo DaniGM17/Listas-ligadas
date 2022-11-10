@@ -8,20 +8,20 @@ package listaLigada;
  *
  * @author dania
  */
-public class Nodo {
-    private int dato;//dato almacendo
+public class Nodo<T> {
+    private T dato;//dato almacendo
     private Nodo siguiente;// apuntador al siguiente nodo, referencia a la misma clase
     
-    public Nodo(int d){
+    public Nodo(T d){
         this.dato = d;
         this. siguiente = null;
     }
 
-    public int getDato() {
+    public T getDato() {
         return dato;
     }
 
-    public void setDato(int dato) {
+    public void setDato(T dato) {
         this.dato = dato;
     }
 
